@@ -7,7 +7,7 @@ B, et afficher sa valeur à partir de B.*/
 
 int main()
 {
-    int n, m;
+    int n, m, s = 0;
 
     printf("Donnez le nombres de lignes\n");
     scanf("%d", &n);
@@ -33,7 +33,8 @@ int main()
         for (int j = 0; j < m; j++)
         {
 
-            T[(n * i) + j] = M[i][j];
+            T[s] = M[i][j];
+            s++;
         }
     }
 
